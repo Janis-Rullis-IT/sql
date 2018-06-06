@@ -15,6 +15,6 @@ CREATE TABLE `1_user_address`(
 ) ENGINE = INNODB DEFAULT CHARACTER SET = UTF8;
 ```
 
-* Hash the field with a common algorith like SHA1 into CHAR(40).
+* Hash the field with a common algorithm like SHA1 (it will be the same in PHP, MYSQL, GO) into CHAR(40).
 * Add UNIQUE index, desirable on multiple columns `ADD UNIQUE INDEX `user_hash` (`user_id`, `hash`)`
 > Don't use HEX becaue that will make application part more complex.
