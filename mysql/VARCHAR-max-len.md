@@ -5,7 +5,8 @@
 Tables total byte size is 65530.
 
 * 5000 VARCHAR is fine.
-* [1000 VARCHAR is fine for indexeed field.](https://stackoverflow.com/q/8746207)
+* [1000 VARCHAR is fine for indexeed field.](https://stackoverflow.com/q/8746207) 
+> but better use sha1 hash for indexed texts (See Unique-texts.md)
 
 ## Long story
 
