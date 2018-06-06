@@ -3,12 +3,15 @@
 ## TL; DR
 
 Tables total byte size is 65530.
-So 5000 VARCHAR is fine.
+
+* 5000 VARCHAR is fine.
+* [1000 VARCHAR is fine for indexeed field.](https://stackoverflow.com/q/8746207)
 
 ## Long story
 
 * [C.10.4 Limits on Table Column Count and Row Size (dev.mysql.com)](https://dev.mysql.com/doc/refman/8.0/en/column-count-limit.html)
 * [15.8.1.7 Limits on InnoDB Tables (dev.mysql.com)](https://dev.mysql.com/doc/refman/8.0/en/innodb-restrictions.html)
+* [#1071 - Specified key was too long; max key length is 1000 bytes (stackoverflow.com)](https://stackoverflow.com/a/8747703)
 
 Although InnoDB supports row sizes larger than **65,535 bytes internally, MySQL itself imposes a **row-size limit of 65,535 for the combined size of all columns**:
 
