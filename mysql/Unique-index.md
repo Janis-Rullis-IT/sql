@@ -14,13 +14,13 @@ CREATE TABLE `1_user_address`(
 
 ## TL;DR
 
-### Use INSERT IGNORE INTO
+### [Use INSERT IGNORE INTO](#insert-ignore-into)
 
 ```sql
 INSERT IGNORE INTO `1_user_address` (`id`, `user_id`, `address`) VALUES (NULL, '1', 'a');
 ```
 
-### Re-index id after 5 years
+### [Re-index id after 5 years](#re-index-the-id-when-its-critical)
 
 If you don't like gaps between id (1, 6, 20) then you can re-index them:
 
