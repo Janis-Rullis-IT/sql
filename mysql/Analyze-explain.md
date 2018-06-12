@@ -20,3 +20,21 @@ SELECT * FROM `posts`
 ```sql
 ANALYZE TABLE t
 ```
+
+## Get current queries
+
+```sql
+SHOW FULL PROCESSLIST
+```
+> In PMA Options/Show full texts/Go.
+
+## Clear query cache
+
+* [Clear MySQL query cache without restarting server (stackoverflow.com)](https://stackoverflow.com/a/5231744)
+
+```sql
+RESET QUERY CACHE;
+```
+```sql
+FLUSH QUERY CACHE;
+```
