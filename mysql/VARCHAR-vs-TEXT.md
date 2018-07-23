@@ -23,6 +23,8 @@
 
 [Use MEDIUMTEXT or LONGTEXT to store strings longer than approximately 64 Kb. VARCHAR Does not support storing values that large. Keep in mind the effects of the multi-byte character set.](https://www.linkedin.com/pulse/mysql-large-varchar-vs-text-omer-k-niah/)
 
+
+
 ## Default value
 
 * TEXT - NULL
