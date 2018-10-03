@@ -4,8 +4,11 @@
 mysql | 2018-10-03 15:35:00 140469729617664 [Warning] Aborted connection 1209 to db: 'my_db' user: 'my_user' host: '172.11.0.7' (Got an error reading communication packets)
 ```
 
-* [MySQL “Got an error reading communication packet” errors (percona.com)](https://www.percona.com/blog/2016/05/16/mysql-got-an-error-reading-communication-packet-errors/)
-
+* [MySQL “Got an error reading communication packet” errors (dzone.com)](https://dzone.com/articles/mysql-got-an-error-reading-communication-packet-er)
+* [B.5.2.10 Communication Errors and Aborted Connections (dev.mysql.com)](https://dev.mysql.com/doc/refman/8.0/en/communication-errors.html)
+* [MySQL Error Reading Communication Packets (dba.stackexchange.com)](https://dba.stackexchange.com/a/19139)
+* [Database importing hangs: Got an error reading communication packets (support.plesk.com)](https://support.plesk.com/hc/en-us/articles/115003853233-Database-importing-hangs-Got-an-error-reading-communication-packets)
+* [Aborted connection 12345 to db: 'tortix' user: 'tortix' host: 'localhost' (Got an error reading communication packets) (support.atomicorp.com)](https://support.atomicorp.com/hc/en-us/articles/360000202388-Aborted-connection-12345-to-db-tortix-user-tortix-host-localhost-Got-an-error-reading-communication-packets-)
 
 ## Info about happened errors
 
