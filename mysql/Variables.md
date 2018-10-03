@@ -5,8 +5,10 @@
 ```sql
 SHOW VARIABLES LIKE 'connect_timeout'
 ```
+> connect_timeout 2
 
+
+```sql
+SELECT @@GLOBAL.connect_timeout;
 ```
-Variable_name Value
-connect_timeout 2
-```
+> 2
