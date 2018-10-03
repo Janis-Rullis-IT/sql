@@ -31,3 +31,13 @@ Aborted connection 305628 to db: ...
 Aborted clientsDocumentation	7
 Aborted connectsDocumentation	0	The number of failed attempts to connect to the MySQL server.
 ```
+
+## How to debug?
+
+### Decrease to see if it fails
+
+* This will prove that, it really affects this specific case.
+
+### Increase above the usual
+
+* If works, great.
