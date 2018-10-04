@@ -64,3 +64,47 @@ SELECT @@SESSION.wait_timeout;
 * Collect the default value.
 * Set the desired.
 * When the required event is done, set back to the default.
+
+## Variables
+
+### [connect_timeout](https://dev.mysql.com/doc/refman/5.6/en/server-system-variables.html#sysvar_connect_timeout)
+
+* scope: Global
+* default: 10
+* min: 2
+* max: 31536000
+
+### [wait_timeout](https://dev.mysql.com/doc/refman/5.6/en/server-system-variables.html#sysvar_wait_timeout)
+
+* scope: Global, Session
+* default: 28800
+* min: 1
+* max: 31536000
+
+### [interactive_timeout](https://dev.mysql.com/doc/refman/5.6/en/server-system-variables.html#sysvar_interactive_timeout)
+
+* scope: Global, Session
+* default: 28800
+* min: 1
+* max: Not mentioned.
+
+### [max_allowed_packet](https://dev.mysql.com/doc/refman/5.6/en/server-system-variables.html#sysvar_max_allowed_packet)
+
+* scope: Global, Session
+* default: 4194304
+* min: 1024
+* max: 1073741824
+
+### [net_read_timeout](https://dev.mysql.com/doc/refman/5.6/en/server-system-variables.html#sysvar_net_read_timeout)
+
+* scope: Global, Session
+* default: 30
+* min: 1
+* max: Not mentioned.
+
+### [net_write_timeout](https://dev.mysql.com/doc/refman/5.6/en/server-system-variables.html#sysvar_net_write_timeout)
+
+* scope: Global, Session
+* default: 60
+* min: 1
+* max: Not mentioned.
