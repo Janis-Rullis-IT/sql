@@ -17,6 +17,10 @@
 //		\DB::statement("SET SESSION `net_read_timeout` = 1"); // 30
 //		\DB::statement("SET SESSION `net_read_timeout` = 30"); // This resets to defs.
 
-//		\DB::statement("SET SESSION `net_write_timeout` = 0"); // 60
+//		\DB::statement("SET SESSION `net_write_timeout` = 1"); // 60
 		\DB::statement("SET SESSION `net_write_timeout` = 60"); // This resets to defs.
 ```
+
+## Check impact
+
+* In [PMA/Status](/server_status_variables.php)
