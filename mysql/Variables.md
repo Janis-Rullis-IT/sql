@@ -2,7 +2,7 @@
 
 ## List of variables
 
-* (Check variable's values like scope or defaults in the MySQL var table)[https://dev.mysql.com/doc/refman/5.6/en/server-system-variables.html#sysvar_interactive_timeout]
+* [Check variable's values like scope or defaults in the MySQL var table](https://dev.mysql.com/doc/refman/5.6/en/server-system-variables.html#sysvar_interactive_timeout)
 
 ## Show
 
