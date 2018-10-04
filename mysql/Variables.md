@@ -54,3 +54,9 @@ SELECT @@SESSION.wait_timeout;
 \DB::statement("SET SESSION `connection_timeout` = 9");
 ```
 > Can not set, because it is only available as a global var.
+
+#### Workaround to set a global variables per session
+
+* Collect the default value.
+* Set the desired.
+* When the required event is done, set back to the default.
