@@ -12,3 +12,20 @@ FROM `products`
 AND `custom` LIKE '%.%'
 ORDER BY `len` DESC
 ```
+
+## By character count `_`
+
+* `_` stands for exactly one character.
+
+
+### Find words that has 2 more characters after 'Geographi'
+
+```sql
+SELECT `name` FROM `help_category` WHERE `name` LIKE 'Geographi__'
+```
+> Empty
+
+```sql
+SELECT `name` FROM `help_category` WHERE `name` LIKE 'Geographi_'
+```
+> Geographic
