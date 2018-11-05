@@ -1,7 +1,21 @@
 # Datetime
 
-* [MYSQL query / dates older than 1 week ago (all datetimes in UTC) (stackoverflow.com)](https://stackoverflow.com/a/3600537)
+## [Find in a time range](https://stackoverflow.com/a/14104364)
+
 * [Date and Time Functions (dev.mysql.com)](https://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html)
+
+```sql
+SELECT *
+FROM `logs`
+WHERE `created_at`
+BETWEEN '2018-10-25 00:00:00' AND '2018-10-25 23:59:59'
+ORDER BY `id` ASC
+LIMIT 100;
+```
+
+## Find using INTERVAL
+
+* [MYSQL query / dates older than 1 week ago (all datetimes in UTC) (stackoverflow.com)](https://stackoverflow.com/a/3600537)
 * [MySQL Interval (mysqltutorial.org)](http://www.mysqltutorial.org/mysql-interval/)
 
 ```sql
