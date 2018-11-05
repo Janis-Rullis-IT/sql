@@ -7,6 +7,12 @@ WHERE `dir` LIKE '%/eng%';
 ```
 ## Fix converted curly braces
 
+### Before
+
+Hello %7Bname%7D.
+
+### Code
+
 ```sql
 UPDATE `posts`
 SET `value` = REPLACE(`value`, '%7B', '{');
@@ -16,3 +22,7 @@ SET `value` = REPLACE(`value`, '%7B', '{');
 UPDATE `posts`
 SET `value` = REPLACE(`value`, '%7D', '}')
 ```
+
+### After
+
+Hello {name}
