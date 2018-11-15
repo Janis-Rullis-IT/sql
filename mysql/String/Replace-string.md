@@ -26,3 +26,12 @@ SET `value` = REPLACE(`value`, '%7D', '}')
 ### After
 
 Hello {name}
+
+## [Multiple replaces](https://stackoverflow.com/a/1671056)
+
+* There is a chaining possible but it is not very readable so I prefer just repeating the query multiple times.
+
+```sql
+UPDATE `posts` SET `value` = REPLACE(`value`, 'apple', 'fruit');
+UPDATE `posts` SET `value` = REPLACE(`value`, 'banana', 'fruit');
+```
