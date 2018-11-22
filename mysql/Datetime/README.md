@@ -1,5 +1,13 @@
 # Datetime
 
+## After a specific date
+
+```sql
+SELECT *
+FROM `logs`
+WHERE `created_at` > '2018-09-01'
+```
+
 ## [Find in a time range](https://stackoverflow.com/a/14104364)
 
 * [Date and Time Functions (dev.mysql.com)](https://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html)
