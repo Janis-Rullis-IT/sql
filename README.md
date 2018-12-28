@@ -1,6 +1,8 @@
 # sql
 Various SQL examples from MySQL, PostgreSQL, MS SQL.
 
+* https://blog.jooq.org/2015/02/13/10-sql-articles-everyone-must-read/
+
 ## Clients
 
 * https://github.com/Alecaddd/sequeler
