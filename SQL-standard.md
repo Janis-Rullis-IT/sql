@@ -13,6 +13,7 @@ However, most DBMSs still implement a somewhat custom or extended version of the
 * [MySQL / PostgreSQL Data_Types](https://en.wikibooks.org/wiki/Converting_MySQL_to_PostgreSQL#Data_Types)
 * [SQL Numeric Types:](https://www.w3resource.com/sql/data-type.php#NUMERIC)
 * https://www.whoishostingthis.com/resources/ansi-sql-standards/
+* https://aws.amazon.com/blogs/database/another-database-migration-playbook-goes-live-migrate-from-microsoft-sql-server-to-amazon-aurora-mysql/
 
 ## Which DBMS are more standard compliant?
 
