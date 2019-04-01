@@ -1,3 +1,15 @@
+## Case in-sensitive
+
+```sql
+SELECT * FROM `table` WHERE `column` = 'value'
+```
+
+## Case sensitive
+
+```sql
+SELECT * FROM `table` WHERE `column` = BINARY 'value'
+```
+
 ## Find string not containing
 
 ```sql
