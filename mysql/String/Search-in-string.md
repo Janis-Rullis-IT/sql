@@ -1,3 +1,5 @@
+# Search in a string
+
 ## Case in-sensitive
 
 ```sql
@@ -8,6 +10,13 @@ SELECT * FROM `table` WHERE `column` = 'value'
 
 ```sql
 SELECT * FROM `table` WHERE `column` = BINARY 'value'
+```
+
+### Multiple
+
+```sql
+SELECT * FROM `translations`
+WHERE CAST(`key` AS BINARY) IN('Food');
 ```
 
 ## Find string not containing
