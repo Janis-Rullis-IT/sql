@@ -2,7 +2,7 @@
 
 * https://stackoverflow.com/a/8062538
 
-In `.my.cnf`
+In `.my.cnf` `[mysqld]` section
 
 ```
 max_allowed_packet=1GB
