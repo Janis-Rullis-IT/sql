@@ -12,9 +12,12 @@ CREATE TABLE `partner`(
     `mirror_id` INT(10) UNSIGNED NOT NULL COMMENT 'Same item in multiple languages.',
     `country` CHAR(2) NOT NULL,
     `seq` TINYINT(2) UNSIGNED NOT NULL DEFAULT '1',
-    `created_at` INT(10) UNSIGNED NOT NULL,
-    `cached_at` TIMESTAMP NULL DEFAULT NULL DEFAULT CURRENT_TIMESTAMP,
+    
+    `created_at` INT(10) UNSIGNED NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `updated_at` TIMESTAMP NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+    `deleted_at` timestamp NULL DEFAULT NULL,
+    
+    `cached_at` TIMESTAMP NULL DEFAULT NULL DEFAULT CURRENT_TIMESTAMP,    
     `modified_at` INT(10) UNSIGNED NOT NULL,
     `lang_id` TINYINT(3) UNSIGNED NOT NULL,
      `sys_info` varchar(20) DEFAULT NULL COMMENT 'In case if You need to mark it or add some flag. For inner use. For example, edited 3 JSONs by hand and mark \"#1234 upd\", so they could be identified later.',
