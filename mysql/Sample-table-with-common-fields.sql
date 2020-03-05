@@ -13,7 +13,8 @@ CREATE TABLE `partner`(
     `country` CHAR(2) NOT NULL,
     `seq` TINYINT(2) UNSIGNED NOT NULL DEFAULT '1',
     
-    `created_at` INT(10) UNSIGNED NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    `created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Timestamp is readable and has supported default methods available',
+    `created_at_int` INT(10) UNSIGNED NOT NULL COMMENT 'INT is easier and faster for a comparison',
     `updated_at` TIMESTAMP NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
     `deleted_at` timestamp NULL DEFAULT NULL,
     
