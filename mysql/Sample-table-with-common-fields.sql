@@ -17,6 +17,8 @@ CREATE TABLE `partner`(
     `updated_at` TIMESTAMP NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
     `modified_at` INT(10) UNSIGNED NOT NULL,
     `lang_id` TINYINT(3) UNSIGNED NOT NULL,
+     `sys_info` varchar(20) DEFAULT NULL COMMENT 'In case if You need to mark it or add some flag. For inner use. For example, edited 3 JSONs by hand and mark \"#1234 upd\", so they could be identified later.',
+              
     PRIMARY KEY(`id`),
     UNIQUE INDEX `title`(`title`)
 ) ENGINE = INNODB DEFAULT CHARACTER SET = UTF8;
