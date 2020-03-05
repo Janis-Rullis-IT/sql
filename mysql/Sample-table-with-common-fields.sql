@@ -4,7 +4,7 @@ CREATE TABLE `partner`(
     `id` TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
     `title` VARCHAR(250) NOT NULL,
     `url` VARCHAR(250) NOT NULL,
-    `is_public` ENUM('y', 'n') NOT NULL DEFAULT 'n',
+    `is_public` ENUM('y', 'n') NOT NULL DEFAULT 'n' COMMENT 'ENUM is more readable, stricter and faster than VARCHAR.',
     `is_visible` ENUM('y', 'n') NOT NULL DEFAULT 'n' COMMENT 'Show in menu?',
     `has_auth` enum('y','n') NOT NULL DEFAULT 'n' COMMENT 'Does the page has authorization?',
     `status` ENUM('waiting', 'in_progress', 'completed') NOT NULL DEFAULT 'waiting',
