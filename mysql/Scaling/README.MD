@@ -1,0 +1,2 @@
+- http://highscalability.com/blog/2020/4/8/one-team-at-uber-is-moving-from-microservices-to-macroservic.html
+- https://github.com/Janis-Rullis-IT/dev/tree/master/Scaling
