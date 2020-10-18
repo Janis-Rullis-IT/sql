@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS `partner`(
     `is_public` ENUM('y', 'n') NOT NULL DEFAULT 'n' COMMENT 'ENUM is more readable, stricter and faster than VARCHAR.',
     `is_visible` ENUM('y', 'n') NOT NULL DEFAULT 'n' COMMENT 'Show in menu?',
     `has_auth` enum('y','n') NOT NULL DEFAULT 'n' COMMENT 'Does the page has authorization?',
-    `status` ENUM('waiting', 'in_progress', 'completed') NOT NULL DEFAULT 'waiting',
+    		  `status` ENUM('draft', 'completed', 'other') NULL DEFAULT 'draft' COMMENT '#33 #36 #38.',
     `price` SMALLINT(5) UNSIGNED DEFAULT NULL COMMENT "Base price should always be a long INT field, so any time could add a higher precision than 2 digits,  easily make conversions and calc.",
     `mirror_id` INT(10) UNSIGNED NOT NULL COMMENT 'Same item in multiple languages.',
     `country` CHAR(2) NOT NULL,
@@ -13,8 +13,10 @@ CREATE TABLE IF NOT EXISTS `partner`(
     
     `created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Timestamp is readable and has supported default methods available',
     `created_at_int` INT(10) UNSIGNED NOT NULL COMMENT 'INT is easier and faster for a comparison',
-    `updated_at` TIMESTAMP NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
-    `deleted_at` timestamp NULL DEFAULT NULL,
+    
+    `created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+		  `updated_at` TIMESTAMP NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+		  `deleted_at` TIMESTAMP NULL DEFAULT NULL,
     
     `cached_at` TIMESTAMP NULL DEFAULT NULL DEFAULT CURRENT_TIMESTAMP,    
     `modified_at` INT(10) UNSIGNED NOT NULL,
@@ -24,4 +26,4 @@ CREATE TABLE IF NOT EXISTS `partner`(
     PRIMARY KEY(`id`),
     UNIQUE INDEX `title`(`title`),
     INDEX `owner_order` (`owner_id`, `order_id`)
-) ENGINE = INNODB DEFAULT CHARACTER SET = UTF8;
+) ENGINE = INNODB DEFAULT CHARACTER SET = UTF8 8 COMMENT='Related information in #33 #36 #38.'
