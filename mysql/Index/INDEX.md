@@ -28,4 +28,5 @@ Hash indexes (user controlled) are used only in MEMORY engine and can be used fo
 ```sql
 SELECT * FROM table WHERE my_indexed_column = 'mylongstring';
 ```
-The WHERE condition will be hashed and as result will be ‘1234’, the index will point to the correct row. Main advantage of HASH index is the fact that hashes can be much smaller than the indexed value itself. Main problem, though, is that this index type can’t be used to anything else than a simple lookup. You cannot use index on (column1, column2) to cover query with only ‘column1’ in the WHERE clause. Hashes are not unique - collisions can happen and they will slow down the lookup as MySQL will have to check more than a single row per index lookup.
+The WHERE condition will be hashed and as result will be ‘1234’, the index will point to the correct row. Main advantage of HASH index is the fact that hashes can be much smaller than the indexed value itself. Main problem, though, is that this index type can’t be used to anything else than a simple lookup. You cannot use index on (column1, column2) to cover query with only ‘column1’ in the WHERE clause. Hashes are not unique - collisions can happen and they will slow down the lookup as MySQL will have to check more than a single row per index lookup. 
+ 
