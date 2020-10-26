@@ -6,6 +6,13 @@
  
  ![https://github.com/Janis-Rullis-IT/sql/blob/master/mysql/img/Selection_045.png](https://github.com/Janis-Rullis-IT/sql/blob/master/mysql/img/Selection_045.png)
  
+ ```sql
+ CREATE TABLE IF NOT EXISTS `mem`(
+    `id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+    PRIMARY KEY(`id`)
+) ENGINE = MEMORY DEFAULT CHARACTER SET = UTF8;
+```
+ 
  ## InnoDB
  
 Default and recommended for the most cases.
