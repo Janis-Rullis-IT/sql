@@ -12,6 +12,11 @@ Default and recommended for the most cases.
  
  * https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html#:~:text=Choosing%20a%20Storage%20Engine
  * http://zetcode.com/mysql/storageengines/#:~:text=Choosing%20the%20right%20engine
+ * https://mariadb.com/kb/en/choosing-the-right-storage-engine/
+ 
+ ## MariaDB engines
+ 
+InnoDB is a good general transaction storage engine, and, from MariaDB 10.2, the best choice in most cases. It is the default storage engine from MariaDB 10.2. For earlier releases, XtraDB was a performance enhanced fork of InnoDB and is usually preferred.
  
  ## MyISAM
  
