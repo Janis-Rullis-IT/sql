@@ -26,4 +26,4 @@ CREATE TABLE IF NOT EXISTS `partner`(
     PRIMARY KEY(`id`),
     UNIQUE INDEX `title`(`title`),
     INDEX `owner_order` (`owner_id`, `order_id`)
-) ENGINE = INNODB DEFAULT CHARACTER SET = UTF8 8 COMMENT='Related information in #33 #36 #38.'
+) ENGINE = INNODB DEFAULT CHARACTER SET = UTF8 COMMENT='Related information in #33 #36 #38.'
