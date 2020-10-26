@@ -4,6 +4,15 @@
  SHOW ENGINES;
  ```
  
+ ## InnoDB
+ 
+Default and recommended for the most cases.
+ 
+ ## Choose the most fitting engine
+ 
+ * https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html#:~:text=Choosing%20a%20Storage%20Engine
+ * http://zetcode.com/mysql/storageengines/#:~:text=Choosing%20the%20right%20engine
+ 
  ## MyISAM
  
  Because of table-locking is mostly used for read-only workloads.
