@@ -3,7 +3,7 @@
 * https://www.enterprisedb.com/postgres-tutorials/overview-postgresql-indexes
 * https://hub.packtpub.com/6-index-types-in-postgresql-10-you-should-know/
 * https://www.citusdata.com/blog/2017/10/17/tour-of-postgres-index-types/
-* https://thoughtbot.com/blog/postgres-index-types
+* https://thoughtbot.com/blog/postgres-index-types 
 * https://www.postgresql.org/docs/9.5/indexes-types.html#:~:text=PostgreSQL%20provides%20several%20index%20types,fit%20the%20most%20common%20situations.
 * https://www.postgresqltutorial.com/postgresql-indexes/postgresql-index-types/
 
