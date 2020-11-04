@@ -1,5 +1,11 @@
 # [Backup-Restore](https://www.postgresql.org/docs/13/backup-dump.html)
 
-```sql
+```shell
 pg_dump -U lm1-user lm1-user > 20201104-lm1.sql
+```
+
+## Restore
+
+```shell
+psql -U lm1-user --set ON_ERROR_STOP=on lm2 < 20201104-lm1.sql
 ```
