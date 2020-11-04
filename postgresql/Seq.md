@@ -40,3 +40,17 @@ SELECT nextval('serial');
 SELECT currval('serial');
 ```
 > 201
+
+## Create
+
+```sql
+CREATE TABLE roles(
+   role_id serial PRIMARY KEY,
+   role_name VARCHAR (255) UNIQUE NOT NULL
+);
+```
+
+```sql
+SELECT nextval('roles_role_id_seq');
+```
+> 1
