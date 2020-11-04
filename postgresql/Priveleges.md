@@ -1,5 +1,7 @@
 # [Priveleges](https://www.postgresql.org/docs/12/ddl-priv.html)
 
+![img/priv-tab.png](img/priv-tab.png)
+
 ## REFERENCES
 Allows creation of a foreign key constraint referencing a table, or specific column(s) of a table.
 
@@ -27,5 +29,3 @@ For types and domains, allows use of the type or domain in the creation of table
 For foreign-data wrappers, allows creation of new servers using the foreign-data wrapper.
 
 For foreign servers, allows creation of foreign tables using the server. Grantees may also create, alter, or drop their own user mappings associated with that server.
-
-![priv-tab.png](priv-tab.png)
