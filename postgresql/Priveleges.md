@@ -1,5 +1,11 @@
 # [Priveleges](https://www.postgresql.org/docs/12/ddl-priv.html)
 
+## Add ALL
+
+```sql
+GRANT ALL PRIVILEGES ON DATABASE ebi TO "hot-user";
+```
+
 ![img/priv-tab.png](img/priv-tab.png)
 
 ## REFERENCES
