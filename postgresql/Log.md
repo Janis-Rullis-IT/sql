@@ -14,6 +14,10 @@ SHOW log_destination;
 ```
 > stderr
 
+### After changes
+
+![img/csv-log.png](img/csv-log.png)
+
 ```sql
 show log_directory ;
 ```
