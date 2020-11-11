@@ -9,6 +9,7 @@ pg_dump -U lm1-user lm1-user | gzip > 20201104-lm1.sql.gz
 
 ```shell
 psql -U lm1-user --set ON_ERROR_STOP=on lm2 < 20201104-lm1.sql
+pg_restore -U my-user -d "my-db" "my.sql"
 gunzip -c 20201104-lm1.sql.gz | psql -U lm1-user --set ON_ERROR_STOP=on lm4
 ```
 
