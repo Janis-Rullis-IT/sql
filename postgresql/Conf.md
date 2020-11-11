@@ -12,7 +12,7 @@
 
 ```shell
 cp /var/lib/postgresql/data/postgresql.conf /var/lib/postgresql/data/postgresql.20201111.conf
-cp /var/lib/postgres/def.conf > /var/lib/postgresql/data/postgresql.conf
+cp /var/lib/postgres/def.conf /var/lib/postgresql/data/postgresql.conf
 /etc/init.d/postgresql restart
 ```
 
