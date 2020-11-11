@@ -15,3 +15,5 @@ cp /var/lib/postgresql/data/postgresql.conf /var/lib/postgresql/data/postgresql.
 cp /var/lib/postgres/def.conf > /var/lib/postgresql/data/postgresql.conf
 /etc/init.d/postgresql restart
 ```
+
+## ! Sometimes need to restart the container and client connections
