@@ -5,7 +5,7 @@
 
 ```shell
 mkdir -m 777 /var/lib/postgres/pg_log
-
+```
 ```yaml
 log_directory = '/var/lib/postgres/pg_log'	
 ```
