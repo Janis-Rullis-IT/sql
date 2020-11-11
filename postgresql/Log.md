@@ -18,6 +18,14 @@ SHOW log_destination;
 
 ![img/csv-log.png](img/csv-log.png)
 
+```shell
+ls /var/lib/postgresql/data/pg_log
+```
+> postgresql-2020-11-11_145837.csv  postgresql-2020-11-11_145837.log
+
+
+### Others
+
 ```sql
 show log_directory ;
 ```
