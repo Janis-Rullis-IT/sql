@@ -17,3 +17,11 @@ cp /var/lib/postgres/def.conf /var/lib/postgresql/data/postgresql.conf
 ```
 
 ## ! Sometimes need to restart the container and client connections
+
+## Test changes
+
+```sql
+SHOW ALL;
+SHOW timezone;
+select pg_reload_conf();
+```
