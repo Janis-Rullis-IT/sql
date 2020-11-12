@@ -2,6 +2,7 @@
 
 * https://gist.github.com/romuald/f73aa7af4d32a4fe8866ca377d623d13
 * https://medium.com/little-programming-joys/finding-and-killing-long-running-queries-on-postgres-7c4f0449e86d
+* [Monitoring-slow-query.md](Monitoring-slow-query.md)
 
 ```sql
 SELECT user, pid, client_addr, query, query_start, NOW() as now, NOW() - query_start AS elapsed, state
