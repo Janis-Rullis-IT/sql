@@ -7,3 +7,7 @@ EXPLAIN ANALYSE
 SELECT  * 
 FROM    demotable;
 ```
+
+## Rading the info
+
+* https://thoughtbot.com/blog/reading-an-explain-analyze-query-plan
