@@ -8,6 +8,7 @@ SELECT  *
 FROM    demotable;
 ```
 
-## Rading the info
+## Reading the info
 
 * https://thoughtbot.com/blog/reading-an-explain-analyze-query-plan
+* https://www.enterprisedb.com/blog/postgresql-query-optimization-performance-tuning-with-explain-analyze
