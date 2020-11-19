@@ -24,7 +24,8 @@ COMMENT ON INDEX users_idx1 is '#15 users are goood.';
 ```sql
 SELECT tablename, indexname, indexdef
 FROM pg_indexes
-WHEREschemaname = 'public'
+WHERE schemaname = 'public'
+AND indexname ILIKE '%idx%'
 ORDER BY tablename, indexname;
 ```
 
