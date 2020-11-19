@@ -5,7 +5,7 @@
 * [Monitoring-slow-query.md](Monitoring-slow-query.md)
 
 ```sql
-SELECT user, pid, client_addr, query, query_start, NOW() as now, NOW() - query_start AS elapsed, state
+SELECT  datname, usesysid, application_name, user, pid, client_addr, query, query_start, NOW() as now, NOW() - query_start AS elapsed, state
 FROM pg_stat_activity
 WHERE state != 'idle'
 ORDER BY elapsed DESC;
