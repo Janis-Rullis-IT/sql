@@ -19,6 +19,15 @@ DROP INDEX users_idx1;
 COMMENT ON INDEX users_idx1 is '#15 users are goood.';
 ```
 
+## List including CREATE INDEX statements
+
+```sql
+SELECT tablename, indexname, indexdef
+FROM pg_indexes
+WHEREschemaname = 'public'
+ORDER BY tablename, indexname;
+```
+
 ## Sequnce
 
 * https://use-the-index-luke.com/sql/where-clause/the-equals-operator/concatenated-keys
