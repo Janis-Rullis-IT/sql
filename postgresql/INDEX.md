@@ -13,6 +13,12 @@ name, surname);
 DROP INDEX users_idx1;
 ```
 
+### Add a comment
+
+```sql
+COMMENT ON INDEX users_idx1 is '#15 users are goood.';
+```
+
 ## Sequnce
 
 * https://use-the-index-luke.com/sql/where-clause/the-equals-operator/concatenated-keys
