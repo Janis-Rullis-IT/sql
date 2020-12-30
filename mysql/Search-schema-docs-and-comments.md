@@ -1,5 +1,7 @@
 # Search-schema-docs-and-comments
 
+* https://dev.mysql.com/doc/refman/8.0/en/mysql-commands.html
+
 ## Example - get information about public fields
 > Append `\G;` to see the whole text in CLI.
 
