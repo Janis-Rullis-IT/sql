@@ -9,3 +9,4 @@ WHERE `COLUMN_COMMENT` LIKE '%public%'
 OR COLUMN_NAME LIKE '%public%';
 ```
 
+![img/schema-docs.png](img/schema-docs.png)
