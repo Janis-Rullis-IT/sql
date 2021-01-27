@@ -1,6 +1,6 @@
 # [How to Rename a Database in MySQL](https://chartio.com/resources/tutorials/how-to-rename-a-database-in-mysql/)
 
-
+* https://chartio.com/resources/tutorials/how-to-rename-a-database-in-mysql/
 ```shell
 mysql -uYOUR_USER -p
 CREATE DATABASE `NEW_DB`;
