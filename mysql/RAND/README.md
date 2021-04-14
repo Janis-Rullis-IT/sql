@@ -1,5 +1,31 @@
 # RAND() UUID()
 
+## To provide a unique code - fast
+
+* Execute one of these queries below (alphanum recommended) QX.
+* After the execution add a loop that collects duplicate IDs 
+```
+SELECT MAX(id) AS id
+FROM `cars` 
+WHERE `code` IS NOT NULL 
+GROUP BY `code`
+HAVING COUNT(*) > 1;
+```
+* If there are duplicate IDs then pass them to the QX.
+* Repeat that till there are no duplicates.
+
+## alphanum
+
+```sql
+SELECT lpad(conv(floor(rand()*pow(36,8)), 10, 36), 8, 0);
+```
+
+## hexnum string - less char combinations than in alphanum
+
+```sql
+SELECT SUBSTRING(MD5(RAND()) FROM 1 FOR 8) AS myrandomstring
+```
+
 ## UUID_SHORT()
 
 ```sql
