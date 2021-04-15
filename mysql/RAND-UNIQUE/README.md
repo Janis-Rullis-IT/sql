@@ -16,8 +16,11 @@ HAVING COUNT(*) > 1;
 
 ## alphanum
 
+`<SEED>` = `id` OR other unique field if available. 
+In case of a repeated duplicate check, where IDs are passed, leave this empty otherwise it will generate the same code and loop.
+
 ```sql
-SELECT lpad(conv(floor(rand()*pow(36,8)), 10, 36), 8, 0);
+SELECT lpad(conv(floor(rand(<SEED>)*pow(36,8)), 10, 36), 8, 0);
 ```
 
 ## hexnum string - less char combinations than in alphanum
