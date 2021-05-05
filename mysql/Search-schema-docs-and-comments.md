@@ -12,3 +12,13 @@ OR COLUMN_NAME LIKE '%public%';
 ```
 
 ![img/schema-docs.png](img/schema-docs.png)
+
+## Search tables
+
+```sql
+select table_name
+from information_schema.tables
+where table_type = 'BASE TABLE'
+and table_name LIKE 'user_log_%'
+and table_schema = 'my_db';
+```
