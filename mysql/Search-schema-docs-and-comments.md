@@ -22,3 +22,15 @@ where table_type = 'BASE TABLE'
 and table_name LIKE 'user_log_%'
 and table_schema = 'my_db';
 ```
+
+## Functions
+
+```sql
+SELECT 
+    routine_name
+FROM
+    information_schema.routines
+WHERE
+    routine_type = 'FUNCTION'
+        AND routine_schema = 'my_db';
+```
