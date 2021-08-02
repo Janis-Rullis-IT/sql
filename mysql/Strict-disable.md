@@ -3,6 +3,8 @@
 * http://www.sqlines.com/mysql/sql_mode
 * https://dev.mysql.com/doc/refman/8.0/en/sql-mode.html
 
+> Change in Laravel https://github.com/Janis-Rullis-IT/dev/blob/272c51c3ccdb2d07a81055e84a9d3c32ff6b711e/Coding/php/laravel/Strict-mode-mysql-change.md
+
 ## Display current
 
 Get the current value that could be already modified by SET sql_mode statement
