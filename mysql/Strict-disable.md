@@ -33,3 +33,24 @@ SET sql_mode='STRICT_TRANS_TABLES';
 SET sql_mode='';
 ```
 > STRICT_TRANS_TABLES,ONLY_FULL_GROUP_BY
+
+## Example of the impact
+
+* https://dev.mysql.com/doc/refman/8.0/en/group-by-handling.html
+
+```sql
+SELECT id, COUNT(name) AS c FROM apples
+HAVING c >= 1;
+```
+> Error Code: 1140. In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'panelapi_db.questions.id'; this is incompatible with sql_mode=only_full_group_by
+
+```sql
+SET sql_mode='STRICT_TRANS_TABLES'
+```
+
+```sql
+SELECT id, COUNT(name) AS c FROM apples
+HAVING c >= 1;
+```
+> '3', '13946'
+
