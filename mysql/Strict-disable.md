@@ -42,7 +42,7 @@ SET sql_mode='';
 SELECT id, COUNT(name) AS c FROM apples
 HAVING c >= 1;
 ```
-> Error Code: 1140. In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'panelapi_db.questions.id'; this is incompatible with sql_mode=only_full_group_by
+> Error Code: 1140. In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'my_db.apples.id'; this is incompatible with sql_mode=only_full_group_by
 
 ```sql
 SET sql_mode='STRICT_TRANS_TABLES'
