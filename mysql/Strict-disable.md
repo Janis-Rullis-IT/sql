@@ -1,6 +1,7 @@
 # Strict-disable.md
 
 * http://www.sqlines.com/mysql/sql_mode
+* https://dev.mysql.com/doc/refman/8.0/en/sql-mode.html
 
 ## Display current
 
