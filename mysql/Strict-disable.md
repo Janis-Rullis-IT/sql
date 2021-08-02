@@ -24,3 +24,10 @@ SELECT @@sql_mode;
 ```sql
 SET sql_mode='STRICT_TRANS_TABLES';
 ```
+
+## Reset to def
+
+```sql
+SET sql_mode='';
+```
+> STRICT_TRANS_TABLES,ONLY_FULL_GROUP_BY
