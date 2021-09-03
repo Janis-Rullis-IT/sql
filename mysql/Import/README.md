@@ -17,3 +17,10 @@ mysql -uroot -p -v -f -D my_db < my_db.sql
 ```
 zcat < filename.sql.gz | mysql -u root database
 ```
+
+## Workbench + `*.csv`
+
+* Export `*.xls` to `*.csv` (select `wrap strings in quotes`).
+* In Workbench: Open table's data view/Import/Use existing/Show logs.
+
+![https://dev.mysql.com/doc/workbench/en/images/wb-develop-export-results.png](https://dev.mysql.com/doc/workbench/en/images/wb-develop-export-results.png)
