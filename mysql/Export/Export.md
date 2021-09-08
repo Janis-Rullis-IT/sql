@@ -6,3 +6,9 @@
 ```shell
 mysqldump --single-transaction=TRUE -u username -p DB | gzip > file.sql.gz
 ```
+
+## Table
+
+* DB Beaver/Export
+* If necessary then remove the database reference in the exported file. Othersie it will not import if db name will be different.
+* Import with `mysql -uUSERNAME -p DATABASE < file.sql` or UI.
