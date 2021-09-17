@@ -4,7 +4,7 @@
 * [Archive while still exporting](https://stackoverflow.com/a/22279330)
 
 ```shell
-mysqldump --single-transaction=TRUE -u username -p DB | gzip > file.sql.gz
+mysqldump --single-transaction=TRUE --routines --default-character-set=utf8 -uUSER -p -hHOST DB_NAME | gzip > file.sql.gz
 ```
 
 ## Table
