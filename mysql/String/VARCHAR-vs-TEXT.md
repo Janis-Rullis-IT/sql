@@ -23,7 +23,9 @@
 
 [Use MEDIUMTEXT or LONGTEXT to store strings longer than approximately 64 Kb. VARCHAR Does not support storing values that large. Keep in mind the effects of the multi-byte character set.](https://www.linkedin.com/pulse/mysql-large-varchar-vs-text-omer-k-niah/)
 
+### When to use MEDIUMTEXT?
 
+Need to store above 66k chars. AS fast/slow as TEXT but will avoid corrupting, truncating or throwing an error on a huge content.
 
 ## Default value
 
