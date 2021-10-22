@@ -1,5 +1,13 @@
 # MySQL
 
+## Pretty print
+
+```sql
+SELECT * FROM apples \G
+```
+> Will display like a key value list.
+
+
 * [https://modern-sql.com/blog/2015-09/inaugural-post](https://modern-sql.com/blog/2015-09/inaugural-post)
 * [https://medium.com/@Pinterest_Engineering/sharding-pinterest-how-we-scaled-our-mysql-fleet-3f341e96ca6f](https://medium.com/@Pinterest_Engineering/sharding-pinterest-how-we-scaled-our-mysql-fleet-3f341e96ca6f)
 * [https://githubengineering.com/mysql-high-availability-at-github/](https://githubengineering.com/mysql-high-availability-at-github/)
