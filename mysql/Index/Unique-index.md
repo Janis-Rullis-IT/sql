@@ -1,5 +1,7 @@
 # UNIQUE INDEX
 
+> !BE AWARE! Of the length. It might be that max is 191 chars.
+
 Avoid duplicate addresses for a user.
 
 ```sql
