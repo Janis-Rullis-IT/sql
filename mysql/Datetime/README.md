@@ -53,3 +53,9 @@ WEEK	WEEKS
 YEAR	YEARS
 YEAR_MONTH	‘YEARS-MONTHS’
 ```
+
+## Find users that have registered on this date
+
+```sql
+SELECT * FROM users WHERE MONTH(`created_at`) = MONTH(NOW()) AND DAY(`created_at`) = DAY(NOW());
+```
