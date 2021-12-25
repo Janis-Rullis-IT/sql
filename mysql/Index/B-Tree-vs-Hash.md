@@ -15,3 +15,4 @@ A B-tree index can be used for column comparisons in expressions that use the =,
 Hash indexes are used only for equality comparisons that use the = or <=> operators (but are very fast). They are not used for comparison operators such as < that find a range of values. Systems that rely on this type of single-value lookup are known as “key-value stores”; to use MySQL for such applications, use hash indexes wherever possible.
 
 https://dev.mysql.com/doc/refman/8.0/en/index-btree-hash.html
+Answer to Between hashing and b-trees, which method is preferable for storing indexes in a database? by Siddharth Teotia https://www.quora.com/Between-hashing-and-b-trees-which-method-is-preferable-for-storing-indexes-in-a-database/answer/Siddharth-Teotia?ch=15&oid=23417291&share=d9fb88da&srid=8q2p&target_type=answer
