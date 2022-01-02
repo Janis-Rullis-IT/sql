@@ -9,6 +9,10 @@ mysqldump --single-transaction=TRUE --routines --default-character-set=utf8 -uUS
 
 ## Table
 
+mysqldump --single-transaction=TRUE --routines --default-character-set=utf8 -uUSER -p -hHOST DB_NAME TAB_NAME | gzip > file.sql.gz
+
+### OR
+
 * DB Beaver/Export
 * If necessary then remove the database reference in the exported file. Othersie it will not import if db name will be different.
 * Import with `mysql -uUSERNAME -p DATABASE < file.sql` or UI.
