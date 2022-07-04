@@ -1,5 +1,8 @@
 # Import
 
+* Avoid [packet-bigger-than-max_allowed_packe](https://github.com/Janis-Rullis-IT/sql/blob/cacf8c771da8674f65d55ba2a49a215c95a8e6a8/mysql/packet-bigger-than-max_allowed_packet.md).
+
+
 ## A regular import
 
 ```sql
