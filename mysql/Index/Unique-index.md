@@ -56,6 +56,15 @@ INSERT IGNORE INTO `1_user_address` (`id`, `user_id`, `address`) VALUES (NULL, '
 INSERT IGNORE INTO `1_user_address` (`id`, `user_id`, `address`) VALUES (NULL, '1', 'b');
 ```
 
+### Same for UPDATE IGNORE
+
+> Handle the copying of data that has an overlapping code. Update what You can and then change the code of those duplicates, and try agian :D
+```sql
+UPDATE IGNORE products SET `type` = 'car' WHERE `type` = 'old-car';
+UPDATE products SET `code` = CONCAT(`code`,'-old') WHERE `type` = 'old-car';
+UPDATE products SET `type` = 'car' WHERE `type` = 'old-car';
+```
+
 > 1 row inserted.
 
 ```sql
