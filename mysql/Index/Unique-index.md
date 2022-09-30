@@ -21,6 +21,14 @@ CREATE TABLE `1_user_address`(
 ```sql
 INSERT IGNORE INTO `1_user_address` (`id`, `user_id`, `address`) VALUES (NULL, '1', 'a');
 ```
+### Same for UPDATE IGNORE - COPY DATA that has an OVERLAPPING CODE
+
+> Handle the copying of data that has an overlapping code. Update what You can and then change the code of those duplicates, and try agian :D
+```sql
+UPDATE IGNORE products SET `type` = 'car' WHERE `type` = 'old-car';
+UPDATE products SET `code` = CONCAT(`code`,'-old') WHERE `type` = 'old-car';
+UPDATE products SET `type` = 'car' WHERE `type` = 'old-car';
+```
 
 ### [Re-index id after 5 years](#re-index-the-id-when-its-critical)
 
@@ -49,23 +57,13 @@ INSERT INTO `1_user_address` (`id`, `user_id`, `address`) VALUES (NULL, '1', 'a'
 ```sql
 INSERT IGNORE INTO `1_user_address` (`id`, `user_id`, `address`) VALUES (NULL, '1', 'a');
 ```
-
 > 0 rows inserted. (Query took 0.0044 seconds.)
 
 ```sql
 INSERT IGNORE INTO `1_user_address` (`id`, `user_id`, `address`) VALUES (NULL, '1', 'b');
 ```
-
-### Same for UPDATE IGNORE
-
-> Handle the copying of data that has an overlapping code. Update what You can and then change the code of those duplicates, and try agian :D
-```sql
-UPDATE IGNORE products SET `type` = 'car' WHERE `type` = 'old-car';
-UPDATE products SET `code` = CONCAT(`code`,'-old') WHERE `type` = 'old-car';
-UPDATE products SET `type` = 'car' WHERE `type` = 'old-car';
-```
-
 > 1 row inserted.
+> 
 
 ```sql
 INSERT IGNORE INTO `1_user_address` (`id`, `user_id`, `address`) VALUES (NULL, '2', 'a');
