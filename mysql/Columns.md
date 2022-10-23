@@ -3,9 +3,12 @@
 ## From info_schema (if available)
 
 ```sql
-SELECT * FROM `COLUMNS` 
+DESCRIBE INFORMATION_SCHEMA.`COLUMNS`;
+
+SELECT * FROM INFORMATION_SCHEMA.`COLUMNS` 
 WHERE `TABLE_SCHEMA` = 'YOUR_DATABASE'
-AND `TABLE_NAME` = 'YOUR_TABLE`;
+-- AND `TABLE_NAME` = 'YOUR_TABLE`;
+AND COLUMN_NAME LIKE '%product%';
 ```
 
 ## From the row in the MySQL Workbench
