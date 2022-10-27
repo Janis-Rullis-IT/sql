@@ -1,7 +1,8 @@
 # UNIQUE INDEX
 
-> !BE AWARE! Of the length. It might be that max is 191 chars.
-> !BE AWARE! Soft deletes will throw an error if a new record will be created with the same code.
+> !BE AWARE!
+> * The length. It might be that max is 191 chars.
+> * Soft deletes will throw an error if a new record will be created with the same code.
 
 Avoid duplicate addresses for a user.
 
