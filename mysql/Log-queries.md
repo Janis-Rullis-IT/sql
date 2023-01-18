@@ -18,6 +18,7 @@ Add to the docker-compose.yml in the mysql container's command:
 ## Set global var
 
 ### Store in a table
+https://faun.pub/mysql-log-all-queries-to-file-and-table-585b30cd9921
 
 ```sql
 SET GLOBAL log_output = 'TABLE';
@@ -25,9 +26,15 @@ SET GLOBAL general_log = 'ON';
 ```
 > Will be stored in `mysql.general_log` table.
 
+> https://stackoverflow.com/a/36033983
 ```sql
-SELECT * FROM `mysql`.`general_log`
-ORDER BY `event_time` DESC
+SET sql_mode='STRICT_TRANS_TABLES';
+
+SELECT *
+FROM `mysql`.`general_log`
+WHERE `command_type` = 'Execute'
+AND `argument` LIKE 'select %'
+GROUP BY `argument`
 LIMIT 50;
 ```
 
