@@ -1,18 +1,12 @@
 # Log queries
 
-* [MySQL query log – how to log all queries? (blacksaildivision.com)](https://blacksaildivision.com/mysql-query-log)
-
 ### Store in a table
-https://faun.pub/mysql-log-all-queries-to-file-and-table-585b30cd9921
+* https://faun.pub/mysql-log-all-queries-to-file-and-table-585b30cd9921
+* https://stackoverflow.com/a/36033983
 
 ```sql
 SET GLOBAL log_output = 'TABLE';
 SET GLOBAL general_log = 'ON';
-```
-> Will be stored in `mysql.general_log` table.
-
-> https://stackoverflow.com/a/36033983
-```sql
 SET sql_mode='STRICT_TRANS_TABLES';
 
 SELECT `argument`
@@ -26,6 +20,7 @@ LIMIT 100;
 ```
 
 ## CLI
+* [MySQL query log – how to log all queries? (blacksaildivision.com)](https://blacksaildivision.com/mysql-query-log)
 
 ```shell
 mysqld --general_log=1 --general_log_file=/var/log/mysql/my_logs.txt
