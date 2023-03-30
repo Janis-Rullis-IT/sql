@@ -2,6 +2,16 @@
 
 ## From info_schema (if available)
 
+## Pretty col info
+
+```sql
+SELECT COLUMN_NAME, COLUMN_TYPE, IS_NULLABLE, COLUMN_COMMENT
+FROM INFORMATION_SCHEMA.`COLUMNS`  WHERE `TABLE_NAME` = 'users' 
+AND COLUMN_NAME = 'name'\G
+```
+
+## By approx name
+
 ```sql
 DESCRIBE INFORMATION_SCHEMA.`COLUMNS`;
 
